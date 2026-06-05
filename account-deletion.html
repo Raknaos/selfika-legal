@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Suppression du compte et des données — Selfika</title>
+<meta name="description" content="Comment supprimer votre compte et vos données dans l'application Selfika : depuis l'application ou par email.">
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --bg-card: #141414;
+    --bg-card-2: #1B1B1B;
+    --text: #EDEDED;
+    --text-muted: #A0A0A8;
+    --border: #2A2A2E;
+    --violet: #9D4EDD;
+    --rose: #EC4899;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 22px 80px;
+  }
+  header.page-head {
+    text-align: center;
+    padding: 28px 0 18px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.15;
+    margin: 0 0 14px;
+    background: linear-gradient(90deg, var(--violet), var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--violet);
+  }
+  .updated {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 16px;
+  }
+  h2 {
+    font-size: 21px;
+    margin: 40px 0 12px;
+    padding-top: 14px;
+    color: #fff;
+    border-top: 1px solid var(--border);
+  }
+  h2 .num { color: var(--violet); font-weight: 700; margin-right: 8px; }
+  p { margin: 12px 0; color: var(--text); }
+  ul, ol { padding-left: 22px; margin: 12px 0; }
+  li { margin: 8px 0; }
+  a { color: var(--violet); text-decoration: none; border-bottom: 1px solid rgba(157,78,221,.4); }
+  a:hover { color: var(--rose); border-bottom-color: var(--rose); }
+  strong { color: #fff; }
+  .intro {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--rose);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 26px 0 8px;
+    color: var(--text-muted);
+  }
+  .placeholder {
+    display: inline-block;
+    background: rgba(236,72,153,.12);
+    color: #ffb3d9;
+    border: 1px dashed var(--rose);
+    border-radius: 6px;
+    padding: 1px 7px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 22px 0;
+  }
+  .method {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .method.primary { border-color: var(--violet); box-shadow: 0 0 0 1px rgba(157,78,221,.25); }
+  .method .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 8px;
+  }
+  .method h3 { margin: 0 0 8px; font-size: 18px; color: #fff; }
+  .method p { margin: 6px 0; font-size: 15.5px; color: var(--text-muted); }
+  .path {
+    display: inline-block;
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 6px;
+  }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    position: relative;
+    padding-left: 46px;
+    margin: 14px 0;
+    min-height: 30px;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0; top: 0;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--violet), var(--rose));
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .callout {
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 18px 0;
+  }
+  .callout.accent { border-left: 3px solid var(--violet); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { background: var(--bg-card-2); color: #fff; font-weight: 600; }
+  td { color: var(--text-muted); background: var(--bg-card); }
+  .nav-back { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 28px; }
+  .nav-back a {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+  }
+  .nav-back a:hover { color: #fff; border-color: var(--violet); }
+  footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--text-muted); }
+  footer .brand {
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--violet), var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--violet);
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .wrap { padding: 20px 16px 64px; }
+    .methods { grid-template-columns: 1fr; }
+    th, td { padding: 10px; font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-head">
+    <div class="badge">Selfika</div>
+    <h1>Suppression du compte et des données</h1>
+    <div class="updated">Dernière mise à jour : 5 juin 2026</div>
+  </header>
+
+  <nav class="nav-back" aria-label="Pages légales">
+    <a href="privacy-policy.html">Politique de confidentialité</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </nav>
+
+  <p class="intro">
+    Cette page explique comment demander la suppression de votre compte et de vos données
+    associées à l'application <strong>Selfika</strong>. Vous pouvez le faire à tout moment,
+    soit directement depuis l'application, soit par email.
+  </p>
+
+  <h2><span class="num">1.</span>Deux façons de supprimer vos données</h2>
+  <div class="methods">
+    <div class="method primary">
+      <span class="tag">Recommandé</span>
+      <h3>Depuis l'application</h3>
+      <p>Ouvrez Selfika et suivez le chemin&nbsp;:</p>
+      <span class="path">Réglages &gt; Données &gt; Supprimer mes données</span>
+      <p>La suppression est immédiate sur votre appareil et déclenche la suppression côté serveur.</p>
+    </div>
+    <div class="method">
+      <span class="tag">Alternative</span>
+      <h3>Par email</h3>
+      <p>Envoyez votre demande à&nbsp;:</p>
+      <p>contact.selfika@gmail.com</p>
+      <p>Indiquez qu'il s'agit d'une demande de suppression de compte et de données Selfika.</p>
+    </div>
+  </div>
+
+  <h2><span class="num">2.</span>Étapes dans l'application</h2>
+  <ol class="steps">
+    <li>Ouvrez l'application <strong>Selfika</strong> sur votre appareil.</li>
+    <li>Allez dans l'onglet <strong>Réglages</strong>.</li>
+    <li>Ouvrez la section <strong>Données</strong>.</li>
+    <li>Touchez <strong>« Supprimer mes données »</strong>.</li>
+    <li>Confirmez la suppression lorsque l'application vous le demande.</li>
+  </ol>
+
+  <h2><span class="num">3.</span>Demande par email</h2>
+  <p>
+    Si vous préférez procéder par email, écrivez à
+    contact.selfika@gmail.com en précisant&nbsp;:
+  </p>
+  <ul>
+    <li>l'objet «&nbsp;<strong>Suppression de mes données Selfika</strong>&nbsp;»&nbsp;;</li>
+    <li>l'identifiant d'appareil affiché dans <strong>Réglages &gt; Données</strong>, si vous y avez accès (cela nous aide à retrouver les données à supprimer).</li>
+  </ul>
+  <p>
+    Afin de protéger votre vie privée, nous pouvons être amenés à vérifier que la demande
+    provient bien du titulaire de l'appareil avant de procéder.
+  </p>
+
+  <h2><span class="num">4.</span>Ce qui est supprimé</h2>
+  <p>La suppression porte sur l'ensemble des données associées à votre utilisation&nbsp;:</p>
+  <table>
+    <thead>
+      <tr><th>Élément</th><th>Détail</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Profils IA</strong></td>
+        <td>Les profils, modèles et personnalisations IA créés depuis vos photos.</td>
+      </tr>
+      <tr>
+        <td><strong>Bibliothèque locale</strong></td>
+        <td>Les images et vidéos générées et enregistrées dans l'application sur votre appareil.</td>
+      </tr>
+      <tr>
+        <td><strong>Compte côté serveur</strong></td>
+        <td>Les données rattachées à votre identifiant d'appareil sur nos serveurs (y compris les fichiers temporaires de traitement éventuellement présents).</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="callout accent">
+    Les photos que vous aviez importées sont déjà supprimées des serveurs de traitement à
+    l'issue de chaque génération. La suppression du compte efface les éléments restants qui
+    vous sont rattachés.
+  </div>
+
+  <h2><span class="num">5.</span>Délai de suppression</h2>
+  <p>
+    Les données présentes sur votre appareil sont supprimées <strong>immédiatement</strong>.
+    Les données éventuellement présentes côté serveur sont supprimées
+    <strong>sous 30 jours maximum</strong> à compter de votre demande. Ce délai indicatif
+    couvre le traitement de la demande et l'effacement sur nos systèmes et sauvegardes.
+  </p>
+
+  <h2><span class="num">6.</span>Achats et abonnements</h2>
+  <p>
+    La suppression de vos données <strong>n'annule pas automatiquement</strong> un
+    abonnement souscrit via Google Play. Pour gérer ou résilier un abonnement, rendez-vous
+    dans <strong>Google Play &gt; Paiements et abonnements &gt; Abonnements</strong>. Les
+    données de facturation conservées par Google sont régies par la politique de Google.
+  </p>
+
+  <h2><span class="num">7.</span>Données conservées pour obligation légale</h2>
+  <p>
+    Certaines informations strictement nécessaires au respect de nos obligations légales
+    (par exemple les justificatifs comptables liés à un achat) peuvent être conservées
+    pendant la durée imposée par la loi, puis supprimées. Ces données ne sont pas utilisées
+    à d'autres fins.
+  </p>
+
+  <h2><span class="num">8.</span>Besoin d'aide&nbsp;?</h2>
+  <p>
+    Pour toute question sur la suppression de vos données, contactez-nous à
+    contact.selfika@gmail.com. Pour en savoir plus sur la manière
+    dont nous traitons vos données, consultez notre
+    <a href="privacy-policy.html">politique de confidentialité</a>.
+  </p>
+
+  <footer>
+    <p><span class="brand">Selfika</span> — Génération de photos et vidéos par IA</p>
+    <p>
+      <a href="privacy-policy.html">Confidentialité</a> &nbsp;·&nbsp;
+      <a href="account-deletion.html">Suppression des données</a> &nbsp;·&nbsp;
+      <a href="mentions-legales.html">Mentions légales</a>
+    </p>
+    <p>Dernière mise à jour : 5 juin 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
