@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Politique de confidentialité — Selfika</title>
+<meta name="description" content="Politique de confidentialité de l'application Selfika : données traitées, sous-traitants, vos droits RGPD.">
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --bg-card: #141414;
+    --bg-card-2: #1B1B1B;
+    --text: #EDEDED;
+    --text-muted: #A0A0A8;
+    --border: #2A2A2E;
+    --violet: #9D4EDD;
+    --rose: #EC4899;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 22px 80px;
+  }
+  header.page-head {
+    text-align: center;
+    padding: 28px 0 18px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.15;
+    margin: 0 0 14px;
+    background: linear-gradient(90deg, var(--violet), var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--violet);
+  }
+  .updated {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 16px;
+  }
+  h2 {
+    font-size: 21px;
+    margin: 40px 0 12px;
+    padding-top: 14px;
+    color: #fff;
+    border-top: 1px solid var(--border);
+  }
+  h2 .num {
+    color: var(--violet);
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  h3 {
+    font-size: 17px;
+    margin: 22px 0 8px;
+    color: var(--rose);
+  }
+  p { margin: 12px 0; color: var(--text); }
+  ul, ol { padding-left: 22px; margin: 12px 0; }
+  li { margin: 8px 0; }
+  a { color: var(--violet); text-decoration: none; border-bottom: 1px solid rgba(157,78,221,.4); }
+  a:hover { color: var(--rose); border-bottom-color: var(--rose); }
+  strong { color: #fff; }
+  .intro {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--rose);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 26px 0 8px;
+    color: var(--text-muted);
+  }
+  .placeholder {
+    display: inline-block;
+    background: rgba(236,72,153,.12);
+    color: #ffb3d9;
+    border: 1px dashed var(--rose);
+    border-radius: 6px;
+    padding: 1px 7px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .callout {
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 18px 0;
+  }
+  .callout.accent { border-left: 3px solid var(--violet); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--bg-card-2);
+    color: #fff;
+    font-weight: 600;
+  }
+  td { color: var(--text-muted); background: var(--bg-card); }
+  .nav-back {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 28px;
+  }
+  .nav-back a {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+  }
+  .nav-back a:hover { color: #fff; border-color: var(--violet); }
+  footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--text-muted); }
+  footer .brand {
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--violet), var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--violet);
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .wrap { padding: 20px 16px 64px; }
+    th, td { padding: 10px; font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-head">
+    <div class="badge">Selfika</div>
+    <h1>Politique de confidentialité</h1>
+    <div class="updated">Dernière mise à jour : 5 juin 2026</div>
+  </header>
+
+  <nav class="nav-back" aria-label="Pages légales">
+    <a href="account-deletion.html">Suppression du compte &amp; des données</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </nav>
+
+  <p class="intro">
+    La présente politique de confidentialité décrit la manière dont l'application mobile
+    <strong>Selfika</strong> (« l'application », « nous ») collecte, utilise et protège vos
+    données personnelles lorsque vous l'utilisez pour générer des photos et des vidéos par
+    intelligence artificielle. Elle est rédigée conformément au Règlement général sur la
+    protection des données (RGPD — Règlement UE 2016/679) et à la loi française
+    « Informatique et Libertés ».
+  </p>
+
+  <h2><span class="num">1.</span>Responsable du traitement</h2>
+  <p>
+    Le responsable du traitement des données est l'éditeur de l'application Selfika :
+  </p>
+  <ul>
+    <li><strong>Responsable du traitement :</strong> Selfika (entrepreneur individuel, France)</li>
+    <li><strong>Identifiant :</strong> SIREN en cours d'attribution</li>
+    <li><strong>Contact :</strong> contact.selfika@gmail.com</li>
+  </ul>
+  <p>
+    Selfika est édité par un entrepreneur individuel (micro-entreprise) immatriculé en
+    France. L'identité complète de l'éditeur et son adresse sont accessibles publiquement via
+    les informations du développeur sur Google Play (conformément au règlement DSA). Pour
+    toute demande&nbsp;: contact.selfika@gmail.com.
+  </p>
+  <p>
+    Pour toute question relative à vos données personnelles, vous pouvez nous écrire à
+    l'adresse contact.selfika@gmail.com.
+  </p>
+
+  <h2><span class="num">2.</span>Données que nous traitons</h2>
+  <p>
+    Selfika est conçue pour minimiser la collecte de données. Nous ne demandons pas la
+    création d'un compte nominatif et ne collectons pas votre nom, votre adresse postale ni
+    vos coordonnées bancaires. Les données traitées sont les suivantes :
+  </p>
+  <table>
+    <thead>
+      <tr><th>Donnée</th><th>Description</th><th>Finalité</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Photos importées</strong></td>
+        <td>Les images que vous choisissez d'importer depuis votre appareil pour les utiliser dans l'application.</td>
+        <td>Générer les images et vidéos que vous demandez.</td>
+      </tr>
+      <tr>
+        <td><strong>Identifiant d'appareil</strong></td>
+        <td>Un identifiant technique propre à votre appareil ou à votre installation de l'application.</td>
+        <td>Faire fonctionner l'application, rattacher votre statut d'achat et prévenir les abus.</td>
+      </tr>
+      <tr>
+        <td><strong>Statut d'achat</strong></td>
+        <td>L'information indiquant si vous avez effectué un achat (abonnement ou crédits), transmise par Google Play. <strong>Aucun numéro de carte bancaire</strong> n'est collecté ni reçu par Selfika.</td>
+        <td>Débloquer les fonctionnalités payantes auxquelles vous avez souscrit.</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="callout accent">
+    <strong>Important :</strong> les paiements sont intégralement gérés par
+    <strong>Google Play</strong>. Selfika ne voit, ne stocke et ne traite aucune donnée
+    de carte bancaire.
+  </div>
+
+  <h2><span class="num">3.</span>Finalités du traitement</h2>
+  <p>Vos données sont utilisées exclusivement pour&nbsp;:</p>
+  <ul>
+    <li>générer les images et les vidéos que vous demandez à partir de vos photos&nbsp;;</li>
+    <li>faire fonctionner l'application et améliorer sa fiabilité&nbsp;;</li>
+    <li>gérer votre statut d'achat et débloquer les fonctionnalités correspondantes&nbsp;;</li>
+    <li>prévenir la fraude, les abus et les usages contraires aux conditions d'utilisation.</li>
+  </ul>
+
+  <h2><span class="num">4.</span>Base légale</h2>
+  <p>Nous traitons vos données sur les bases légales suivantes (article 6 du RGPD)&nbsp;:</p>
+  <ul>
+    <li><strong>L'exécution du service</strong> que vous demandez (génération de contenus) — article 6.1.b&nbsp;;</li>
+    <li><strong>Votre consentement</strong>, lorsque vous importez volontairement une photo en vue de son traitement — article 6.1.a&nbsp;;</li>
+    <li><strong>Notre intérêt légitime</strong> à sécuriser l'application et à prévenir les abus — article 6.1.f.</li>
+  </ul>
+
+  <h2><span class="num">5.</span>Sous-traitant IA tiers (fal.ai)</h2>
+  <p>
+    Pour générer vos images et vos vidéos, Selfika a recours à un prestataire technique
+    spécialisé dans l'inférence de modèles d'intelligence artificielle&nbsp;:
+  </p>
+  <div class="callout">
+    <strong>fal.ai — fal, Inc.</strong><br>
+    Les photos que vous importez sont transmises à fal.ai <strong>uniquement le temps du
+    traitement</strong> nécessaire à la génération du résultat demandé. fal.ai agit en
+    qualité de <strong>sous-traitant</strong> au sens du RGPD et traite ces données pour
+    notre compte et selon nos instructions.
+  </div>
+  <p>
+    Ces images peuvent être traitées sur des serveurs situés en dehors de l'Union
+    européenne (notamment aux États-Unis). Le cas échéant, ces transferts sont encadrés par
+    des garanties appropriées (clauses contractuelles types de la Commission européenne).
+    fal.ai n'est pas autorisé à utiliser vos photos pour entraîner ses propres modèles ni à
+    des fins qui lui seraient propres.
+  </p>
+  <p>
+    Aucune donnée n'est transmise à d'autres tiers à des fins commerciales ou publicitaires.
+  </p>
+
+  <h2><span class="num">6.</span>Paiements</h2>
+  <p>
+    Les achats réalisés dans l'application (abonnements ou crédits) sont traités par
+    <strong>Google Play</strong>, conformément aux conditions d'utilisation et à la
+    politique de confidentialité de Google. Selfika reçoit uniquement la confirmation de la
+    validité de l'achat (statut d'achat), à l'exclusion de toute coordonnée bancaire.
+  </p>
+
+  <h2><span class="num">7.</span>Absence de revente de données</h2>
+  <p>
+    Nous <strong>ne vendons pas</strong>, ne louons pas et n'échangeons pas vos données
+    personnelles. Vos photos et vos données ne sont jamais utilisées à des fins
+    publicitaires, ni transmises à des courtiers en données ou à des annonceurs.
+  </p>
+
+  <h2><span class="num">8.</span>Durée de conservation</h2>
+  <p>Nous appliquons un principe de conservation limitée&nbsp;:</p>
+  <ul>
+    <li>
+      <strong>Photos importées et fichiers de traitement&nbsp;:</strong> elles ne sont
+      conservées que le temps strictement nécessaire à la génération du résultat, puis
+      supprimées des serveurs de traitement. Elles ne sont pas conservées de façon durable
+      à des fins autres que la fourniture du service.
+    </li>
+    <li>
+      <strong>Contenus générés&nbsp;:</strong> ils sont enregistrés dans la bibliothèque
+      locale de votre appareil. Vous en gardez le contrôle et pouvez les supprimer à tout
+      moment.
+    </li>
+    <li>
+      <strong>Identifiant d'appareil et statut d'achat&nbsp;:</strong> conservés le temps de
+      l'utilisation de l'application et pour la durée requise par nos obligations légales
+      (notamment comptables).
+    </li>
+  </ul>
+
+  <h2><span class="num">9.</span>Vos droits (RGPD)</h2>
+  <p>
+    Conformément au RGPD, vous disposez à tout moment des droits suivants sur vos données
+    personnelles&nbsp;:
+  </p>
+  <ul>
+    <li><strong>Droit d'accès</strong> — obtenir une copie des données vous concernant&nbsp;;</li>
+    <li><strong>Droit de rectification</strong> — corriger des données inexactes&nbsp;;</li>
+    <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données&nbsp;;</li>
+    <li><strong>Droit à la limitation</strong> et <strong>droit d'opposition</strong> au traitement&nbsp;;</li>
+    <li><strong>Droit au retrait du consentement</strong> à tout moment, sans effet sur les traitements déjà réalisés.</li>
+  </ul>
+  <p>
+    Pour exercer ces droits, écrivez-nous à contact.selfika@gmail.com.
+    Nous répondons dans un délai maximal d'un mois.
+  </p>
+
+  <h2><span class="num">10.</span>Suppression de vos données</h2>
+  <p>Vous pouvez supprimer vos données de deux manières&nbsp;:</p>
+  <div class="callout accent">
+    <strong>Directement dans l'application :</strong> rendez-vous dans
+    <strong>Réglages &gt; Données &gt; « Supprimer mes données »</strong>.
+  </div>
+  <p>
+    <strong>Par email :</strong> en écrivant à contact.selfika@gmail.com.
+    Pour le détail de ce qui est supprimé et les délais applicables, consultez la page
+    <a href="account-deletion.html">Suppression du compte &amp; des données</a>.
+  </p>
+
+  <h2><span class="num">11.</span>Âge minimum</h2>
+  <p>
+    Selfika est réservée aux personnes âgées de <strong>13 ans au minimum</strong>. Si vous
+    avez moins de 13 ans, vous n'êtes pas autorisé à utiliser l'application. Si nous
+    apprenons qu'un mineur de moins de 13 ans nous a transmis des données, nous les
+    supprimerons.
+  </p>
+
+  <h2><span class="num">12.</span>Sécurité</h2>
+  <p>
+    Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour
+    protéger vos données&nbsp;: chiffrement des communications (HTTPS/TLS), accès restreint
+    aux données, transmission des photos au sous-traitant pour la seule durée du traitement,
+    et suppression des fichiers temporaires. Aucun système n'étant infaillible, nous ne
+    pouvons toutefois pas garantir une sécurité absolue.
+  </p>
+
+  <h2><span class="num">13.</span>Modifications de cette politique</h2>
+  <p>
+    Nous pouvons mettre à jour la présente politique afin de refléter des évolutions
+    légales ou techniques. La date de dernière mise à jour figure en haut de cette page. En
+    cas de modification importante, nous vous en informerons par un moyen approprié au sein
+    de l'application.
+  </p>
+
+  <h2><span class="num">14.</span>Contact &amp; réclamation</h2>
+  <p>
+    Pour toute question, vous pouvez nous contacter à
+    contact.selfika@gmail.com. Vous avez également le droit
+    d'introduire une réclamation auprès de la Commission nationale de l'informatique et des
+    libertés (CNIL), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 —
+    <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.
+  </p>
+
+  <footer>
+    <p><span class="brand">Selfika</span> — Génération de photos et vidéos par IA</p>
+    <p>
+      <a href="privacy-policy.html">Confidentialité</a> &nbsp;·&nbsp;
+      <a href="account-deletion.html">Suppression des données</a> &nbsp;·&nbsp;
+      <a href="mentions-legales.html">Mentions légales</a>
+    </p>
+    <p>Dernière mise à jour : 5 juin 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
